@@ -15,3 +15,16 @@ Transform images into bizarre absurdity.
 <p align="center">
   <img src="https://raw.githubusercontent.com/compromise-evident/Overkillographic/main/Other/2.jpg">
 </p>
+
+These are natural frames taken form https://www.youtube.com/watch?v=tO01J-M3g0U
+Unsqueezed, that GIF is beautifully 200MB.
+
+
+
+# What you can do with this
+
+* Experiment with EXIF stripping.
+* Create bar/QR codes through segmented writing.
+* Mass do things to other files (C++ easily modifiable.)
+* Hide information in videos, images, and GIFs.
+* Enjoy the crazy acid perspective.
