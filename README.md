@@ -17,7 +17,7 @@ Transform images into bizarre absurdity.
 </p>
 
 These are natural frames taken form youtube.com/watch?v=tO01J-M3g0U
-Unsqueezed GIF is 200MB--beauty.
+Unsqueezed GIF is a 200MB beauty.
 
 <br>
 
