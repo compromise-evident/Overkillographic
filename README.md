@@ -31,6 +31,7 @@ Unsqueezed GIF is a 200MB beauty.
 
 * Experiment with EXIF stripping.
 * Create bar/QR codes through segmented writing.
+* Hence a good RICIN system for groupOTP.
 * Mass do things to other files (C++ easily modifiable.)
 * Hide information in videos, images, and GIFs.
 * Adjust Byte modification for other styles (cpp line 218.)
