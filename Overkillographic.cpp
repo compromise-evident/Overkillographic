@@ -1,4 +1,4 @@
-/// Overkillographic - transform a set of images into bizarre absurdity.
+/// Overkillographic - transform images into bizarre absurdity.
 /// Nikolay Valentinovich Repnitskiy - License: WTFPLv2+ (wtfpl.net)
 
 
