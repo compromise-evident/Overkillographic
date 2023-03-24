@@ -27,4 +27,5 @@ Unsqueezed GIF is a 200MB beauty.
 * Create bar/QR codes through segmented writing.
 * Mass do things to other files (C++ easily modifiable.)
 * Hide information in videos, images, and GIFs.
+* Adjust Byte modification for other styles (line 218.)
 * Enjoy the crazy acid perspective.
