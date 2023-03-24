@@ -25,7 +25,7 @@ Unsqueezed GIF is a 200MB beauty.
 
 
 
-# What you can do with this
+# What else
 
 * Experiment with EXIF stripping.
 * Create bar/QR codes through segmented writing.
