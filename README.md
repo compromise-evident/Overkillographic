@@ -16,10 +16,10 @@ Transform images into bizarre absurdity.
   <img src="https://raw.githubusercontent.com/compromise-evident/Overkillographic/main/Other/2.jpg">
 </p>
 
-These are natural frames taken form https://www.youtube.com/watch?v=tO01J-M3g0U
-Unsqueezed, that GIF is beautifully 200MB.
+These are natural frames taken form youtube.com/watch?v=tO01J-M3g0U
+Unsqueezed GIF is 200MB--beauty.
 
-
+<br>
 
 # What you can do with this
 
