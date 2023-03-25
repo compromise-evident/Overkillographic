@@ -195,7 +195,7 @@ int main()
 		the rest of the image is simply black yet still sized as the original.*/
 		in_stream.open("temp_image_copy.bmp");
 		out_stream.open(same_name);
-		for(int a = 0; a < 10000; a++)
+		for(int b = 0; b < 10000; b++)
 		{	in_stream.get(garbage_byte);
 			out_stream.put(garbage_byte);
 		}
