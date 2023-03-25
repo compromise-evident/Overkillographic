@@ -25,7 +25,9 @@ Unsqueezed GIF is a 200MB beauty.
   <img src="https://raw.githubusercontent.com/compromise-evident/Overkillographic/main/Other/Terminal_bfc6af18cd7b4a361425a38b741379af6931234e14fcc35f36c011a3055c7edc.png">
 </p>
 
+[Auditing in the browser?](https://coliru.stacked-crooked.com/a/1f3c5f45746b4ef9)
 
+<br>
 
 # What else
 
