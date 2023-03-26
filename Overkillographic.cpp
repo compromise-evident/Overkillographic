@@ -101,7 +101,7 @@ int main()
 	
 	//Checks if FOLDER exists.
 	in_stream.open(path_to_file);
-	if(in_stream.fail() == true) {in_stream.close(); cout << "\n\nNo such directory.\n";             return 0;}
+	if(in_stream.fail() == true) {in_stream.close(); cout << "\n\nNo such directory.\n"; return 0;}
 	in_stream.close();
 	
 	//Gets location of the first encountered end-null coming from the left in path_to_file[].
