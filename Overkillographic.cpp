@@ -16,7 +16,7 @@
   produced by this program; you may safely work with ~200 frames at a time.
 * Overkillographic converts images to bmp, modifies bmp, & converts bmp to jpg.
 * If you're using Devuan/Debian, you should already have mogrify available. Else
-  you need to install it: apt install imagemagick
+  you need to install it: apt install imagemagick     It converts to & from bmp.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 How to run the program  -  Software package repositories for GNU+Linux operating
 systems have all the tools you can imagine. Open a terminal and use this command
