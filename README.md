@@ -1,5 +1,5 @@
 <!--
-Transform images into bizarre absurdity.
+Transform images into bizarre absurdity, and experiment with data-image.
 -->
 
 
