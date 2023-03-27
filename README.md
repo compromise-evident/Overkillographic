@@ -9,11 +9,11 @@ Transform images into bizarre absurdity, and experiment with data-image.
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/compromise-evident/Overkillographic/main/Other/1.jpg">
+  <img src="https://raw.githubusercontent.com/compromise-evident/Overkillographic/main/Other/Frame_1.jpg">
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/compromise-evident/Overkillographic/main/Other/2.jpg">
+  <img src="https://raw.githubusercontent.com/compromise-evident/Overkillographic/main/Other/Frame_2.jpg">
 </p>
 
 These are real-life frames taken from [youtube.com/watch?v=tO01J-M3g0U](https://www.youtube.com/watch?v=tO01J-M3g0U)
