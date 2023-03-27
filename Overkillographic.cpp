@@ -146,7 +146,7 @@ int main()
 	system("mkdir -p New_images");
 	long file_name_bytes_read_bookmark = -1;
 	for(long a = 0; a < number_of_files; a++)
-	{	//Pauses for keeping cool.
+	{	//..........Pauses for keeping cool.
 		if(pauses_of_2_seconds == true) {system("sleep 2");}
 		
 		//..........Loads path_to_file[] with file name.
@@ -166,7 +166,7 @@ int main()
 		}
 		in_stream.close();
 		
-		//Copies entire image to working directory.
+		//..........Copies entire image to working directory.
 		in_stream.open(path_to_file);
 		out_stream.open("temp_image_copy");
 		in_stream.get(garbage_byte);
@@ -177,10 +177,44 @@ int main()
 		in_stream.close();
 		out_stream.close();
 		
-		//Converts image to bmp.
+		//..........Converts image to bmp.
 		system("mogrify -format bmp temp_image_copy");
 		
-		//Prepares new stream to new folder.
+		//..........Copies first 10,000 bmp Bytes to new bmp.
+		in_stream.open("temp_image_copy.bmp");
+		out_stream.open("new.bmp");
+		for(int b = 0; b < 10000; b++)
+		{	in_stream.get(garbage_byte);
+			out_stream.put(garbage_byte);
+		}
+		
+		//..........Grabs & modifies remaining Bytes.
+		in_stream.get(garbage_byte);
+		for(long long temp; in_stream.eof() == false;)
+		{	//Normal conversion to values 0-255.
+			temp = (garbage_byte);
+			if(temp < 0) {temp += 256;}
+			
+			//..........Modification to the Byte. Poke it as you wish.
+			temp *= temp;
+			
+			//..........Normalizing Byte.
+			if(temp < 0) {temp = 0;}
+			temp %= 256;
+			
+			//..........Normal conversion before write-back.
+			if(temp < 128) {out_stream.put(temp      );}
+			else           {out_stream.put(temp - 256);}
+			
+			in_stream.get(garbage_byte);
+		}
+		in_stream.close();
+		out_stream.close();
+		
+		//..........Converts new bmp to jpg.
+		system("mogrify -format jpg new.bmp");
+		
+		//Prepares new stream to folder New_images.
 		char same_name[10000] = {"New_images/"};
 		int temp_null = path_to_file_null_bookmark;
 		for(int b = 11; path_to_file[temp_null] != '\0'; b++)
@@ -188,43 +222,12 @@ int main()
 			temp_null++;
 		}
 		
-		/*Copies first 10,000 bmp Bytes to folder New_images. These first bytes
-		decide image height & width so even if you accidentally write terabytes
-		to the file after these bytes, it will be ignored. Only bytes needed to
-		finish the image are taken--Byte for Byte where if you run out of Bytes,
-		the rest of the image is simply black yet still sized as the original.*/
-		in_stream.open("temp_image_copy.bmp");
+		//..........Copies new jpg to folder New_images.
+		in_stream.open("new.jpg");
 		out_stream.open(same_name);
-		for(int b = 0; b < 10000; b++)
-		{	in_stream.get(garbage_byte);
-			out_stream.put(garbage_byte);
-		}
-		
-		//Grabs & modifies remaining image Bytes.
 		in_stream.get(garbage_byte);
-		for(long long temp; in_stream.eof() == false;)
-		{	//Normal conversion to values 0-255.
-			temp = (garbage_byte);
-			if(temp < 0) {temp += 256;}
-			
-			//Modification to the Byte. Poke it as you wish.
-			/*      ______________________________________________________
-			       /                                                      \
-			      |  ÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅ  |
-			      |  ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ MODIFY  BYTE ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤  |
-			      |  ¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥  |
-			       \______________________________________________________/
-			*/
-			temp *= temp;
-			
-			//Normalizing Byte.
-			if(temp < 0) {temp = 0;}
-			temp %= 256;
-			
-			//Normal conversion before write-back.
-			if(temp < 128) {out_stream.put(temp      );}
-			else           {out_stream.put(temp - 256);}
-			
+		for(; in_stream.eof() == false;)
+		{	out_stream.put(garbage_byte);
 			in_stream.get(garbage_byte);
 		}
 		in_stream.close();
@@ -236,4 +239,6 @@ int main()
 	remove("f");
 	remove("temp_image_copy");
 	remove("temp_image_copy.bmp");
+	remove("new.bmp");
+	remove("new.jpg");
 }
