@@ -38,3 +38,14 @@ Unsqueezed GIF is a 200MB beauty.
 * Hide information in videos, images, and GIFs.
 * Adjust Byte modification for other styles (cpp line 218.)
 * Enjoy the crazy acid perspective.
+
+# Experiment now
+
+Overkillographic first converts the image to bmp then copies the first 10,000
+Bytes of that bmp in order to create a new bmp of the same parameters. Remaining
+Bytes can be anything you wish, even terabytes of garbage data; when viewing the
+new bmp, the Bytes used are the first n which fill a canvas of original bmp
+parameters. So, you may write segmented Bytes in repetition and create a bar-code.
+Here, after copying the first 10,000 Bytes, remaining Bytes are taken from the
+original bmp, modified, and appended to the new bmp until I run out of Bytes
+to take, making both bmps equal in size. This new bmp is then converted to jpg.
