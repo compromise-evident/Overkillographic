@@ -125,7 +125,7 @@ int main()
 	in_stream.close();
 	
 	//Counts number of images.
-	long number_of_files = 0;
+	long long number_of_files = 0;
 	char garbage_byte;
 	char temp_garbage_byte;
 	in_stream.open("f");
@@ -144,15 +144,15 @@ int main()
 	path_to_file[path_to_file_null_bookmark] = '/';
 	path_to_file_null_bookmark++;
 	system("mkdir -p New_images");
-	long file_name_bytes_read_bookmark = -1;
-	for(long a = 0; a < number_of_files; a++)
+	long long file_name_bytes_read_bookmark = -1;
+	for(long long a = 0; a < number_of_files; a++)
 	{	//..........Pauses for keeping cool.
 		if(pauses_of_2_seconds == true) {system("sleep 2");}
 		
 		//..........Loads path_to_file[] with file name.
 		in_stream.open("f");
 		file_name_bytes_read_bookmark++;
-		for(long b = 0; b < file_name_bytes_read_bookmark; b++) {in_stream.get(garbage_byte);} //..........Skips name Bytes that have been read.
+		for(long long b = 0; b < file_name_bytes_read_bookmark; b++) {in_stream.get(garbage_byte);} //..........Skips name Bytes that have been read.
 		
 		int path_to_file_write_bookmark = path_to_file_null_bookmark;
 		in_stream.get(garbage_byte);
