@@ -42,7 +42,7 @@ Full GIF is 93MB; unrender-able.
 # Experiment now
 
 Overkillographic first converts the image to bmp then copies the first 10,000
-Bytes of that bmp in order to create a new bmp of the same parameters. Remaining
+Bytes from that bmp in order to create a new bmp of the same parameters. Remaining
 Bytes can be anything you wish, even terabytes of garbage data; when viewing the
 new bmp, n Bytes are read, n being the exact file size of the original bmp.
 So, you may write segmented Bytes in repetition and create a bar-code.
