@@ -17,7 +17,7 @@ Transform images into bizarre absurdity, and experiment with data-image.
 </p>
 
 These are real-life frames taken from [youtube.com/watch?v=tO01J-M3g0U](https://www.youtube.com/watch?v=tO01J-M3g0U)
-Unsqueezed GIF is a 200MB beauty.
+Unsqueezed GIF is 93MB; unrender-able.
 
 <br>
 
