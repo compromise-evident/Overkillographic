@@ -2,6 +2,11 @@ Overkillographic log
 
 
 
+Version 1.1.0   Accepts files of any name length - major bug fix. path_to_file[]
+                was not being  terminated with null for each new file name load.
+                Removed pauses of 2 seconds option (user knobs.)
+                Wednesday, May 3 2023
+
 Version 1.0.0   Good for modifying mass-do on other files, starting EXIF killing
                 and barcode/QR code creation once you get the writes as blocks.
                 Friday, March 24 2023
