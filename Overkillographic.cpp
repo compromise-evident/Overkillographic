@@ -2,7 +2,7 @@
 /// Nikolay Valentinovich Repnitskiy - License: WTFPLv2+ (wtfpl.net)
 
 
-/* Version 1.0.0
+/* Version 1.1.0
  ______________________________________________________________________________
 /                                                                              \
 |                     Have some folder ready with image(s)                     |
@@ -17,66 +17,14 @@
 * Overkillographic converts images to bmp, modifies bmp, & converts bmp to jpg.
 * If you're using Devuan/Debian, you should already have mogrify available. Else
   you need to install it: apt install imagemagick     It converts to & from bmp.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-How to run the program  -  Software package repositories for GNU+Linux operating
-systems have all the tools you can imagine. Open a terminal and use this command
-as root to install Geany and g++ on your computer: apt install geany g++   Geany
-is a fast & lightweight text editor and Integrated Development Environment where
-you can write and run code. g++ is the GNU compiler for C++ which allows written
-code to run. The compiler operates in the background and displays errors in your
-code as you will see in the lower Geany box. Make a new folder somewhere on your
-machine. Paste this code into Geany. For clarity in auditing, enable indentation
-guides: go to View >> Show Indentation Guides. Save the document as anything.cpp
-within the newly-created folder. Use these shortcuts to run the program: F9, F5.
-You may paste over this code with other  .cpp files, or open a new tab & repeat.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-How to make an executable with g++  -  Save this program as anything.cpp, open a
-terminal, and type g++ then space. Drag & drop this saved file into the terminal
-and its directory will be  appended to your pending entry. Click on the terminal
-and press enter.   a.out now resides in the user directory, you may rename it to
-anything.  To run that executable, simply drag and drop it into a terminal, then
-click on the terminal and press enter.  Reminder:  executable's effect-directory
-is /home/user or where you put the executable. Opening  .cpp  files in Geany and
-hitting F9 creates the same executable--movable, renameable, drag & droppable.*/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 #include <fstream>
 #include <iostream>
 using namespace std;
 
 int main()
-{	//                               user knobs
-	
-	/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////////////////////
-	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\  /////////////////////////////////////
-	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\    ////////////////////////////////////
-	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\      ///////////////////////////////////
-	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\        //////////////////////////////////
-	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\            ////////////////////////////////
-	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\              ///////////////////////////////
-	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\                  /////////////////////////////
-	\\\\\\\\\\\\\\\\\\\\\\\\\\\                      ///////////////////////////
-	\\\\\\\\\\\\\\\\\\\\\\\                              ///////////////////////
-	\\\\\\\\\\\\\\\\\\                                        ////////////////*/
-	
-	
-	//                                                                                                           |
-	bool pauses_of_2_seconds = false; //Default = false else pauses between each            slow if broken >     |
-	//                                image operation to keep your storage cool.                                 |
-	
-	
-	/*////////////////                                          \\\\\\\\\\\\\\\\
-	///////////////////////                              \\\\\\\\\\\\\\\\\\\\\\\
-	///////////////////////////                      \\\\\\\\\\\\\\\\\\\\\\\\\\\
-	/////////////////////////////                  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-	///////////////////////////////              \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-	////////////////////////////////            \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-	//////////////////////////////////        \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-	///////////////////////////////////      \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-	////////////////////////////////////    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-	/////////////////////////////////////  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-	//////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
-	
-	ifstream in_stream;
+{	ifstream in_stream;
 	ofstream out_stream;
 	
 	//Gets path to FOLDER from user.
@@ -146,10 +94,7 @@ int main()
 	system("mkdir -p New_images");
 	long long file_name_bytes_read_bookmark = -1;
 	for(long long a = 0; a < number_of_files; a++)
-	{	//..........Pauses for keeping cool.
-		if(pauses_of_2_seconds == true) {system("sleep 2");}
-		
-		//..........Loads path_to_file[] with file name.
+	{	//..........Loads path_to_file[] with file name.
 		in_stream.open("f");
 		file_name_bytes_read_bookmark++;
 		for(long long b = 0; b < file_name_bytes_read_bookmark; b++) {in_stream.get(garbage_byte);} //..........Skips name Bytes that have been read.
@@ -162,9 +107,11 @@ int main()
 			file_name_bytes_read_bookmark++;
 			in_stream.get(garbage_byte);
 			
-			if(in_stream.eof() == true) {break;}
+			if(in_stream.eof() == true) {cout << "\nError 1\n"; return 0;}
 		}
 		in_stream.close();
+		
+		path_to_file[path_to_file_write_bookmark] = '\0';
 		
 		//..........Copies entire image to working directory.
 		in_stream.open(path_to_file);
