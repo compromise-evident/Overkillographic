@@ -3,10 +3,11 @@
 
 
 /* Version 1.1.0
- ______________________________________________________________________________
-/                                                                              \
-|                     Have some folder ready with image(s)                     |
-\______________________________________________________________________________/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ Have some folder ready with image(s.) Image names must be .png / .jpg & so on.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Download a YouTube video containing frames of your liking and use the OpenShot
   video editor to dispense those frames from the video, at an fps of you liking.
