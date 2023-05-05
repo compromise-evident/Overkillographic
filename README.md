@@ -19,14 +19,13 @@ Transform images into bizarre absurdity, and experiment with data-image.
 These are real-life frames taken from [youtube.com/watch?v=tO01J-M3g0U](https://www.youtube.com/watch?v=tO01J-M3g0U)
 GIF is squeezed for render-ability.
 
-<br>
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/compromise-evident/Overkillographic/main/Other/Terminal_bfc6af18cd7b4a361425a38b741379af6931234e14fcc35f36c011a3055c7edc.png">
 </p>
 
 [Auditing in the browser?](https://coliru.stacked-crooked.com/a/b30432a6674ec00f)
 
+<br>
 <br>
 
 # What else
@@ -38,6 +37,9 @@ GIF is squeezed for render-ability.
 * Hide information in videos, images, and GIFs.
 * Adjust Byte modification for other styles (cpp line 218.)
 * Enjoy the crazy acid perspective.
+
+<br>
+<br>
 
 # Experiment now
 
