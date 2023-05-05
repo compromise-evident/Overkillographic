@@ -23,7 +23,7 @@ GIF is squeezed for render-ability.
   <img src="https://raw.githubusercontent.com/compromise-evident/Overkillographic/main/Other/Terminal_8e7e3ab08d8ba018298d10a37d38566f3e9da3b0e0d3fffa648d67646cf0b34a.png">
 </p>
 
-[Auditing in the browser?](https://coliru.stacked-crooked.com/a/b30432a6674ec00f)
+[Auditing in the browser?](https://coliru.stacked-crooked.com/a/33c5f88201e0e793)
 
 <br>
 <br>
