@@ -20,7 +20,7 @@ These are real-life frames taken from [youtube.com/watch?v=tO01J-M3g0U](https://
 GIF is squeezed for render-ability.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/compromise-evident/Overkillographic/main/Other/Terminal_bfc6af18cd7b4a361425a38b741379af6931234e14fcc35f36c011a3055c7edc.png">
+  <img src="https://raw.githubusercontent.com/compromise-evident/Overkillographic/main/Other/Terminal_8e7e3ab08d8ba018298d10a37d38566f3e9da3b0e0d3fffa648d67646cf0b34a.png">
 </p>
 
 [Auditing in the browser?](https://coliru.stacked-crooked.com/a/b30432a6674ec00f)
