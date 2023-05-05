@@ -29,7 +29,8 @@ int main()
 	ofstream out_stream;
 	
 	//Gets path to FOLDER from user.
-	cout << "\nDrag & drop FOLDER into terminal or enter path:\n";
+	cout << "\nHave a FOLDER ready with png/jpg... image(s.)"
+	     << "\nDrag & drop FOLDER into terminal or enter path:\n";
 	char  path_to_file[10000];
 	for(int a = 0; a < 10000; a++) {path_to_file[a] = '\0';} //Fills path_to_file[] with null.
 	cin.getline(path_to_file, 10000);
