@@ -52,6 +52,6 @@ Here, after copying the first 10,000 Bytes, remaining Bytes are taken from the
 original bmp, modified, and appended to the new bmp until I run out of Bytes
 to take, making both bmps equal in size. This new bmp is then converted to jpg. <br>
 
-10,000 is a randomly-chosen quantity, you probably only need 100 Bytes but just to be safe.
+10,000 is a randomly-chosen quantity, you probably only need 200 Bytes but just to be safe.
 Because the first 10,000 Bytes are taken verbatim, you can see a short horizontal segment
 if the original image--in the final image.
