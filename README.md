@@ -50,4 +50,6 @@ new bmp, n Bytes are read, n being the exact file size of the original bmp.
 So, you may write segmented Bytes in repetition and create a bar-code.
 Here, after copying the first 10,000 Bytes, remaining Bytes are taken from the
 original bmp, modified, and appended to the new bmp until I run out of Bytes
-to take, making both bmps equal in size. This new bmp is then converted to jpg.
+to take, making both bmps equal in size. This new bmp is then converted to jpg. <br>
+
+10,000 is a randomly-chosen quantity, you probably only need 100 Bytes but just to be safe...
