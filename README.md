@@ -54,4 +54,4 @@ to take, making both bmps equal in size. This new bmp is then converted to jpg. 
 
 10,000 is a randomly-chosen quantity, you probably only need 200 Bytes but just to be safe.
 Because the first 10,000 Bytes are taken verbatim, you can see a short horizontal segment
-if the original image--in the final image.
+of the original image--in the final image.
