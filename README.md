@@ -55,3 +55,14 @@ to take, making both bmps equal in size. This new bmp is then converted to jpg. 
 10,000 is a randomly-chosen quantity, you probably only need 200 Bytes but just to be safe.
 Because the first 10,000 Bytes are taken verbatim, you can see a short horizontal segment
 of the original image--in the final image (bottoms.)
+
+<br>
+<br>
+
+# ML
+
+Because this style of image-building through "bmp header-copying then appending anything"
+is certain to give you an image without corruption errors upon viewing, you can convert
+training images to bmp and train NNs to predict "next sub-pixel intensities" or whatever
+you choose to do to make it happen, then have generated output appended to a bmp
+header-copy boilerplate. (You get images generated no matter what.)
