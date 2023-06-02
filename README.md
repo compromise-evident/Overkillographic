@@ -69,5 +69,5 @@ header-copy boilerplate. (You get images generated no matter what.) <br>
 
 For audio on the other hand, there are no complications. See my RICIN cpps.
 They essentially write any Bytes to a file without headers or footers.
-You then use audio editors to import those files raw and output
+You then use audio editors to import those files as "Raw Data" and output
 as mp3.
