@@ -68,6 +68,6 @@ you choose to do to make it happen, then have generated output appended to a bmp
 header-copy boilerplate. (You get images generated no matter what.) <br>
 
 For audio on the other hand, there are no complications. See my RICIN cpps.
-They essentially write any Bytes to a file without header or footers.
+They essentially write any Bytes to a file without headers or footers.
 You then use audio editors to import those files raw and output
 as mp3.
