@@ -65,4 +65,9 @@ Because this style of image-building through "bmp header-copying then appending 
 is certain to give you an image without corruption errors upon viewing, you can convert
 training images to bmp and train NNs to predict "next sub-pixel intensities" or whatever
 you choose to do to make it happen, then have generated output appended to a bmp
-header-copy boilerplate. (You get images generated no matter what.)
+header-copy boilerplate. (You get images generated no matter what.) <br>
+
+For audio on the other hand, there are no complications. See my RICIN cpps.
+They essentially write any Bytes to a file without header or footers.
+You then use audio editors to import those files raw and output
+as mp3.
